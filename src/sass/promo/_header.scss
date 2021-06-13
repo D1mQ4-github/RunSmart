@@ -1,0 +1,42 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        display: block;
+        max-width: 251px;
+        max-height: 45px;
+        img {
+            width: 100%;
+        }
+    }
+    &__official {
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 12px;
+        text-align: center;
+        div {
+            margin-top: 7px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+    }
+    &__phone {
+        display: block;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        text-align: right;
+        text-decoration: none;
+    }
+    &__btn {
+        @include btn;
+        width: 153px;
+        height: 32px;
+        font-size: 12px;
+        line-height: 19px;
+        margin: 4px 0 0 auto;
+    }
+}
