@@ -22,6 +22,9 @@
         margin: 0 auto;
         width: 70px;
         height: 70px;
+        &_animation {
+            animation: heart 2s infinite ease-in-out;
+        }
     }
     &__title {
         color: $text-color;

@@ -1,0 +1,28 @@
+@keyframes heart {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes reviewsLoader {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    70% {
+        transform: translateY(-30px);
+    }
+    85% {
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
