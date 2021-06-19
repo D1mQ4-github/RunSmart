@@ -159,6 +159,22 @@ document.addEventListener('DOMContentLoaded', () => {
         return await res.json();
     };
 
+    const itemsPostLoader = (element, activeClass) => {
+        const $el = document.querySelectorAll(element);
+        $el.forEach(e => e.style.display = 'hidden');
+        document.addEventListener('scroll', () => {
+            $el.forEach(el => {
+                let topIndent = el.getBoundingClientRect(),
+                    windowHeight = document.documentElement.clientHeight;
+                if ((topIndent.top - windowHeight) <= 0) {
+                    el.classList.add(activeClass);
+                }
+            });
+        });
+
+    };
+    itemsPostLoader('.reviews__item', 'reviews__item-active');
+
     bindForm('.consultation__form');
     bindForm('.modal__form');
     slider({

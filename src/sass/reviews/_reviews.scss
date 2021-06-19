@@ -12,7 +12,10 @@
         display: flex;
         justify-content: space-between;
         margin-top: 60px;
-        animation: reviewsLoader .5s ease-in-out;
+        &-active {
+            display: flex;
+            animation: reviewsLoader .5s ease-in-out;
+        }
     }
     &__img {
         width: 169px;
